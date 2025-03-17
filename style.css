@@ -1,0 +1,214 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.join-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background: url('illustrated-hero.jpg') center/cover no-repeat;
+    padding: 150px 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #0056b3;
+}
+
+/* How It Works - 1x3 Cards */
+.how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.work-step {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Features Grid */
+.features .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+/* Pricing */
+.pricing-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.plan button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.plan button:hover {
+    background: #0056b3;
+}
+
+/* FAQ */
+.faq-item {
+    background: white;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    margin: 10px auto;
+    width: 80%;
+    text-align: left;
+    max-width: 600px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background: #f8f9fa;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px;
+    }
+    .cta-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .pricing-options {
+        flex-direction: column;
+    }
+    .plan {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .how-it-works {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-step {
+        width: 80%;
+    }
+}
